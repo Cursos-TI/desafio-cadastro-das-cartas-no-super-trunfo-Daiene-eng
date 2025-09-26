@@ -27,7 +27,13 @@ int main(){
 /*declarando variaveis de calculo*/  
     
     int resulpopu;
-    int resu
+    int resularea;
+    int resulpib;
+    int resulnp;
+    int resuldpopu;
+    int resulpercap;
+    int resulspoder;
+/*declarando variaveis de comparação*/    
     printf("Dados da Carta 1\n");
     printf("Digite a letra do estado: \n");
     scanf("%s", &estado1);
@@ -83,6 +89,13 @@ int main(){
     spoder1 = (float) populacao1 + area1 + pib1 + npturistico1 + percap1 + dpopu1;
     spoder2 = (float) populacao2 + area2 + pib2 + npturistico2 + percap2 + dpopu2;
 /*Calculando com operador matematico de adição*/
+    resularea = area1 > area2;
+    resulpopu = populacao1 > populacao2;
+    resulpib = pib1 > pib2;
+    resulpercap = percap1 > percap2;
+    resulnp = npturistico1 > npturistico2;
+    resuldpopu = dpopu1 < dpopu2;
+    resulspoder = spoder1 > spoder2;
 
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
@@ -92,6 +105,9 @@ int main(){
     printf("Área em km²: %f \n", area1);
     printf("PIB: %f \n", pib1);
     printf("Números de Pontos Turísticos: %d \n", npturistico1);
+    printf("A densidade popuacional é:%.2f\n",dpopu1);
+    printf(" O Pibper Capital é:%.2f\n",percap1);
+    printf("O Super Poder é:%.2f\n",spoder1);
 /*imprimindo dados da carta 1*/
     printf("Carta 2 \n");
     printf("Estado: %s \n", estado2);
@@ -101,8 +117,20 @@ int main(){
     printf("Área em km²: %f \n", area2);
     printf("PIB: %f \n", pib2);
     printf("Números de Pontos Turísticos: %d \n", npturistico2);
+    printf("A densidade populacional é:%.2f\n",dpopu2);
+    printf("O Pibper Capital é:%.2f\n",percap2);
+    printf("O Super Poder é:%.2f\n",spoder2);
 /*imprimindo dados da carta 2*/
 
+    printf("Comparação de cartas \n");
+    printf("População: %d \n", resulpopu);
+    printf("Area: %d \n", resularea);
+    printf("Pib: %d \n", resulpib);
+    printf("Pontos Turisticos: %d \n", resulnp);
+    printf("Densidade Populacional: %d \n", resuldpopu);
+    printf("Pib Per Capita: %d \n", resulpercap);
+    printf("Super Poder: %d \n", resulspoder);
+/*imprimindo a comparação da carta 1 com a carta 2*/    
     
     return 0;
 
