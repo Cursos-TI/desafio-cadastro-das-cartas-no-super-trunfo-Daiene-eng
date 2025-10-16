@@ -89,6 +89,7 @@ int main(){
     spoder1 = (float) populacao1 + area1 + pib1 + npturistico1 + percap1 + dpopu1;
     spoder2 = (float) populacao2 + area2 + pib2 + npturistico2 + percap2 + dpopu2;
 /*Calculando com operador matematico de adição*/
+
     resularea = area1 > area2;
     resulpopu = populacao1 > populacao2;
     resulpib = pib1 > pib2;
@@ -96,7 +97,15 @@ int main(){
     resulnp = npturistico1 > npturistico2;
     resuldpopu = dpopu1 < dpopu2;
     resulspoder = spoder1 > spoder2;
+/*Fazendo a comparação das cartas*/
 
+    if (pib1 > pib2) {
+    printf("Carta 1 %f, venceu \n" , pib1);
+    } else {
+    printf("Carta 2 %f, venceu \n" , pib2) 
+    }
+/*Comparando o pib para ver qual carta é maior*/       
+    
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
     printf("Código: %d \n", cod1);
