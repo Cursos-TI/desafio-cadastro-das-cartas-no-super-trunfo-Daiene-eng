@@ -33,7 +33,7 @@ int main(){
     int resuldpopu;
     int resulpercap;
     int resulspoder;
-    int opção1;
+    int opcao1;
     int opcao2;
     int resulop1;
     int resulop2;
@@ -110,7 +110,7 @@ int main(){
     if (pib1 > pib2) {
     printf("Carta 1 %f, venceu \n" , pib1);
     } else {
-    printf("Carta 2 %f, venceu \n" , pib2) 
+    printf("Carta 2 %f, venceu \n" , pib2); 
     }
 /*Comparando o pib para ver qual carta é maior*/       
     
@@ -251,23 +251,22 @@ int main(){
      }
 /*Usando switch*/
      
-    soatri1 = (float) spoder1 + populacao1 + area1 + pib1 + npturistico1 + |
-    soatri2 = (float) spoder2 + populacao2 + area2 + pib2 + npturistico2 + |
+    soatri1 = (float) spoder1 + populacao1 + area1 + pib1 + npturistico1 + percap1 + dpopu1;
+    soatri2 = (float) spoder2 + populacao2 + area2 + pib2 + npturistico2 + percap2 + dpopu2;
 /*Soma total*/
     printf("Resultado da comparação da primeira opção \n");
     printf(" \n");
     if(resulop1 = 1){
         printf("Carta 1 venceu \n");
-    }else{
-        printf("Carta 2 venceu \n");
-    }else{
+    }else {
         printf("Carta 2 venceu \n");
     }
+        
 
     /*Exibindo resultado de comparação da segunda opção*/
     printf("Resultado da soma dos atributos \n");
     printf("Resultado da soma da carta 1: %d \n", soatri1);
-    printf("Resultado da soma da carta 2: %d \n", soatri2)
+    printf("Resultado da soma da carta 2: %d \n", soatri2);
     printf(" \n");
     if(soatri1 > soatri2){
         printf("Carta 1 venceu");   
