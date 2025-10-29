@@ -33,7 +33,13 @@ int main(){
     int resuldpopu;
     int resulpercap;
     int resulspoder;
-    int opção;
+    int opção1;
+    int opcao2;
+    int resulop1;
+    int resulop2;
+    int resulfinal;
+    int soatri1;
+    int soatri2;
 
 /*declarando variaveis de comparação*/    
     printf("Dados da Carta 1\n");
@@ -108,7 +114,7 @@ int main(){
     }
 /*Comparando o pib para ver qual carta é maior*/       
     
-    printf("Escolha uma opção:\n");
+    printf("Escolha a primeira opção:\n");
     printf("1. população\n");
     printf("2. area\n");
     printf("3. pib\n");
@@ -116,71 +122,133 @@ int main(){
     printf("5. densidade populacional\n");
     printf("6. pib percap\n");
     printf("7. super poder\n");
-    scanf("%d", &opcao);
-    switch (opcao) {
+    scanf("%d", &opcao1);
+    switch (opcao1) {
         case 1:
-            if (populacao1 > populacao2) {
-        printf("Carta 1 %f, venceu \n", populacao1 );
-      } else if(populacao1 = populacao2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", populacao2 );
-    }
+            printf("Você escolheu população\n" );
+            resulop1 = populacao1 > populacao2 ? 1:0;
         break;
         case 2:
-            if (area1 > area2) {
-        printf("Carta 1 %f, venceu \n", area1 );
-      } else if(area1 = area2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", area2 );
-    }
+            printf("Você escolheu area\n" );
+            resulop1 = area1 > area2 ? 1:0;
         break;   
         case 3:
-            if (pib1 > pib2) {
-        printf("Carta 1 %f, venceu \n", pib1 );
-      } else if(pib1 = pib2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", pib2 );
-    }
+           printf("Você escolheu pib\n" );
+            resulop1 = pib1 > pib2 ? 1:0;
         break;
         case 4:
-            if (npturistico1 > npturistico2) {
-        printf("Carta 1 %f, venceu \n", npturistico1 );
-      } else if(npturistico1 = npturistico2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", npturistico2 );
-    }
+            printf("Você escolheu numero de pontos turisticos\n" );
+            resulop1 = npturistico1 > npturistico2 ? 1:0;
         break;
         case 5:
-            if (dpopu1 > dpopu2) {
-        printf("Carta 1 %f, venceu \n", dpopu1 );
-      } else if(dpopu1 = dpopu2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", dpopu2 );
-    }
+           printf("Você escolheu densidade popupacional\n" );
+            resulop1 = dpopu1 > dpopu2 ? 1:0;
         break;
         case 6:
-            if (percap1 > percap2) {
-        printf("Carta 1 %f, venceu \n", percap1 );
-      } else if(percap1 = percap2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", percap2 );
-    }
+           printf("Você escolheu pib percap\n" );
+            resulop1 = percap1 > percap2 ? 1:0;
         break;
         case 7:
-            if (spoder1 > spoder2) {
-        printf("Carta 1 %f, venceu \n", spoder1 );
-      } else if(spoder1 = spoder2){
-        printf("empate\n" );
-      } else {
-        printf("Carta 2 %f, venceu \n", spoder2 );
-    }
+            printf("Você escolheu super poder\n" );
+            resulop1 = spoder1 > spoder2 ? 1:0;
         break;
+        default:
+        printf("Empate \n" );
+    }
+
+
+    printf("Escolha a segunda opção:\n");
+    if (opcao1 = 1){
+    printf("2. area\n");
+    printf("3. pib\n");
+    printf("4. numero de pontos turisticos\n");
+    printf("5. densidade populacional\n");
+    printf("6. pib percap\n");
+    printf("7. super poder\n");
+    scanf("%d", &opcao2);
+    }else  if (opcao1 = 2){
+         printf("1. população\n");
+   
+    printf("3. pib\n");
+    printf("4. numero de pontos turisticos\n");
+    printf("5. densidade populacional\n");
+    printf("6. pib percap\n");
+    printf("7. super poder\n");
+    scanf("%d", &opcao2);
+    }else  if (opcao1 = 3){
+         printf("1. população\n");
+    printf("2. area\n");
+    printf("4. numero de pontos turisticos\n");
+    printf("5. densidade populacional\n");
+    printf("6. pib percap\n");
+    printf("7. super poder\n");
+    scanf("%d", &opcao2);
+    }else  if (opcao1 = 4){
+         printf("1. população\n");
+    printf("2. area\n");
+    printf("3. pib\n");
+    printf("5. densidade populacional\n");
+    printf("6. pib percap\n");
+    printf("7. super poder\n");
+    scanf("%d", &opcao2);
+    }else  if (opcao1 = 5){
+         printf("1. população\n");
+    printf("2. area\n");
+    printf("3. pib\n");
+    printf("4. numero de pontos turisticos\n");
+    printf("6. pib percap\n");
+    printf("7. super poder\n");
+    scanf("%d", &opcao2);
+    }else  if (opcao1 = 6){
+         printf("1. população\n");
+    printf("2. area\n");
+    printf("3. pib\n");
+    printf("4. numero de pontos turisticos\n");
+    printf("5. densidade populacional\n");
+    printf("7. super poder\n");
+    scanf("%d", &opcao2);
+    }else  if (opcao1 = 7){
+         printf("1. população\n");
+    printf("2. area\n");
+    printf("3. pib\n");
+    printf("4. numero de pontos turisticos\n");
+    printf("5. densidade populacional\n");
+    printf("6. pib percap\n");
+    scanf("%d", &opcao2);
+    }
+
+     switch (opcao2) {
+        case 1:
+            printf("Você escolheu população\n" );
+            resulop2 = populacao1 > populacao2 ? 1:0;
+        break;
+        case 2:
+            printf("Você escolheu area\n" );
+            resulop2 = area1 > area2 ? 1:0;
+        break;   
+        case 3:
+           printf("Você escolheu pib\n" );
+            resulop2 = pib1 > pib2 ? 1:0;
+        break;
+        case 4:
+            printf("Você escolheu numero de pontos turisticos\n" );
+            resulop2 = npturistico1 > npturistico2 ? 1:0;
+        break;
+        case 5:
+           printf("Você escolheu densidade popupacional\n" );
+            resulop2 = dpopu1 > dpopu2 ? 1:0;
+        break;
+        case 6:
+           printf("Você escolheu pib percap\n" );
+            resulop2 = percap1 > percap2 ? 1:0;
+        break;
+        case 7:
+            printf("Você escolheu super poder\n" );
+            resulop2 = spoder1 > spoder2 ? 1:0;
+        break;
+        default:
+        printf("Empate \n" );
+    
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
     printf("Código: %d \n", cod1);
