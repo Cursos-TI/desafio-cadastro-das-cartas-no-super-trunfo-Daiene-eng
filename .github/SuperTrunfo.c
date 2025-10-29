@@ -248,7 +248,35 @@ int main(){
         break;
         default:
         printf("Empate \n" );
-    
+     }
+/*Usando switch*/
+     
+    soatri1 = (float) spoder1 + populacao1 + area1 + pib1 + npturistico1 + |
+    soatri2 = (float) spoder2 + populacao2 + area2 + pib2 + npturistico2 + |
+/*Soma total*/
+    printf("Resultado da comparação da primeira opção \n");
+    printf(" \n");
+    if(resulop1 = 1){
+        printf("Carta 1 venceu \n");
+    }else{
+        printf("Carta 2 venceu \n");
+    }else{
+        printf("Carta 2 venceu \n");
+    }
+
+    /*Exibindo resultado de comparação da segunda opção*/
+    printf("Resultado da soma dos atributos \n");
+    printf("Resultado da soma da carta 1: %d \n", soatri1);
+    printf("Resultado da soma da carta 2: %d \n", soatri2)
+    printf(" \n");
+    if(soatri1 > soatri2){
+        printf("Carta 1 venceu");   
+    }else if(soatri1 < soatri2){
+        printf("Carta 2 venceu");
+    }else{
+        printf("Empate na soma\n");
+    }
+/*Projeto 1*/
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado1);
     printf("Código: %d \n", cod1);
